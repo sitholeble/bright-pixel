@@ -1,0 +1,243 @@
+.services {
+  background: #f8fafc;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-header h2 {
+  color: #1e293b;
+  margin-bottom: 1rem;
+}
+
+.section-header p {
+  color: #64748b;
+  font-size: 1.1rem;
+}
+
+.packages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.package-card {
+  background: white;
+  border-radius: 1.5rem;
+  padding: 2rem;
+  position: relative;
+  border: 2px solid #e2e8f0;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.package-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.package-card.popular {
+  border-color: #3b82f6;
+  transform: scale(1.05);
+  box-shadow: 0 20px 25px -5px rgba(59, 130, 246, 0.2);
+}
+
+.popular-badge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.package-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.package-icon {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin: 0 auto 1rem;
+}
+
+.package-card h3 {
+  color: #1e293b;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.package-description {
+  color: #64748b;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.package-price {
+  margin-bottom: 1rem;
+}
+
+.price {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.package-features {
+  flex: 1;
+  margin-bottom: 2rem;
+}
+
+.package-features ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.package-features li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 0;
+  color: #64748b;
+}
+
+.package-features li svg {
+  color: #10b981;
+  flex-shrink: 0;
+}
+
+.services-guarantee {
+  background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+  color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+}
+
+.guarantee-content {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.guarantee-content svg {
+  color: #fbbf24;
+  flex-shrink: 0;
+}
+
+.guarantee-content h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.guarantee-content p {
+  margin: 0;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+.additional-services h3 {
+  text-align: center;
+  color: #1e293b;
+  margin-bottom: 2rem;
+  font-size: 1.75rem;
+}
+
+.services-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.service-item {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+}
+
+.service-item:hover {
+  border-color: #3b82f6;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(59, 130, 246, 0.1);
+}
+
+.service-icon {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  flex-shrink: 0;
+}
+
+.service-item h4 {
+  margin-bottom: 0.25rem;
+  color: #1e293b;
+  font-size: 1.1rem;
+}
+
+.service-item p {
+  margin: 0;
+  color: #64748b;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .packages-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .package-card.popular {
+    transform: none;
+  }
+
+  .guarantee-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .services-list {
+    grid-template-columns: 1fr;
+  }
+
+  .service-item {
+    flex-direction: column;
+    text-align: center;
+  }
+}
